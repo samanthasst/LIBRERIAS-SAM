@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class MyLibrary {
+
+    private Scanner scanner;
+
+    // Constructor de la clase
+    public MyLibrary() {
+        this.scanner = new Scanner(System.in);
+    }
+
+    // Función para saludar al usuario
+    public void greetUser() {
+        System.out.println("¡Hola! Bienvenido a la librería personalizada.");
+    }
+
+    // Función para generar un número aleatorio
+    public void generateRandomNumber() {
+        int randomNumber = (int) (Math.random() * 100);
+        System.out.println("Número aleatorio generado: " + randomNumber);
+    }
+
+    // Función para calcular el cuadrado de un número dado
+    public void calculateSquare(int number) {
+        int square = number * number;
+        System.out.println("El cuadrado de " + number + " es: " + square);
+    }
+
+    // Método para cerrar el scanner utilizado en la librería
+    public void closeScanner() {
+        scanner.close();
+        System.out.println("Scanner cerrado. ¡Hasta luego!");
+    }
+}
